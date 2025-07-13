@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DarkStudios</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #121212;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      padding-top: 60px; /* Отступ для фиксированного хедера */
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 60px;
+      background-color: #181818;
+      border-bottom: 1px solid #333;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      z-index: 1000;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+
+    .logo-text {
+      font-weight: bold;
+      font-size: 1.8rem;
+      color: #ff0000; /* красный */
+      user-select: none;
+      white-space: nowrap;
+      cursor: pointer; /* курсор-рука */
+      text-decoration: none; /* убирает подчёркивание */
+      margin-right: auto; /* сдвигает поисковую строку вправо */
+    }
+
+    .logo-text:hover {
+      text-decoration: underline; /* подчёркивание при наведении */
+    }
+
+    .search-bar {
+      width: 400px;
+      max-width: 60vw;
+    }
+
+    .search-bar input[type="text"] {
+      width: 100%;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      background-color: #2c2c2c;
+      color: #fff;
+      box-shadow: 0 0 5px rgba(255, 0, 0, 0.6);
+      transition: background-color 0.3s ease;
+    }
+
+    .search-bar input[type="text"]::placeholder {
+      color: #888;
+    }
+
+    .search-bar input[type="text"]:focus {
+      outline: none;
+      background-color: #3c3c3c;
+      box-shadow: 0 0 8px rgba(255, 0, 0, 0.9);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo-text">DarkStudios</a>
+  <div class="search-bar">
+    <input type="text" placeholder="Поиск" disabled />
+  </div>
+</header>
+
+<main style="padding: 20px; color: #fff;">
+  <h1>Добро пожаловать на DarkStudios!</h1>
+  <p>Здесь будет контент он нашей студии!</p>
+</main>
+
+</body>
+</html>
